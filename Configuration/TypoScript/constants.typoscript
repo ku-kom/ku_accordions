@@ -9,8 +9,8 @@ ku_accordions {
     }
     assets {
         # cat=KU accordions/Assets/; type=string; label=CSS assets: Path to stylesheet.
-        extraCss =
+        extraCss = EXT:ku_accordions/Resources/Public/Css/Dist/ku-accordions.min.css
         # cat=KU accordions/Assets/; type=string; label=JavaScript assets: Path to javaScript file.
-        extraJs = 
+        extraJs = EXT:ku_accordions/Resources/Public/JavaScript/Dist/ku-accordions.min.js
     }
 }
