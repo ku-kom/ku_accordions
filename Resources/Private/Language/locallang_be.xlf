@@ -27,6 +27,15 @@
         <trans-unit id="advanced">
             <source>General settings</source>
         </trans-unit>
+        <trans-unit id="style">
+            <source>Accordion style</source>
+        </trans-unit>
+        <trans-unit id="style_accordion">
+            <source>Normal accordion</source>
+        </trans-unit>
+        <trans-unit id="style_semi_collapse_accordion">
+            <source>Semi collapse accordion</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
