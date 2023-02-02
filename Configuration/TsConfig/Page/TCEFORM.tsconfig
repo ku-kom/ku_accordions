@@ -1,0 +1,45 @@
+TCEFORM {
+    tt_content {
+        # cType ku-accordions:
+        header_layout {
+           types {
+                ku-accordions {
+                    disabled = 1
+                }
+            }
+        }
+
+        header_link {
+           types {
+                ku-accordions {
+                    disabled = 1
+                }
+            }
+        }
+
+        subheader {
+           types {
+                ku-accordions {
+                    disabled = 1
+                }
+            }
+        }
+
+        header_position {
+           types {
+                ku-accordions {
+                    disabled = 1
+                }
+            }
+        }
+
+        date {
+           types {
+                ku-accordions {
+                    disabled = 1
+                }
+            }
+        }
+
+    }
+}
