@@ -1,0 +1,10 @@
+<f:if condition="{accordions}">
+    <div class="ku-accordions">
+        <f:for each="{accordions}" as="child">
+            {child.data.my_mod_header}
+            <f:for each="{child.uploads}" as="upload">
+                {upload.identifier}
+            </f:for>
+        </f:for>
+    </div>
+</f:if>

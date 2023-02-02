@@ -1,0 +1,21 @@
+tt_content.ku-accordions =< lib.contentElement
+tt_content.ku-accordions {
+  templateName = AccordeonContainer
+  templateRootPaths.10 = EXT:ku_accordions/Resources/Private/Templates/
+
+  dataProcessing {
+    188 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+    203 = B13\Container\DataProcessing\ContainerProcessor
+    203 {
+      colPos = 203
+      as = accordions
+
+      dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+      dataProcessing.20 {
+        references.table = tt_content
+        references.fieldName = media
+        as = uploads
+      }
+    }
+  }
+}
