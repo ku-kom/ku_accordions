@@ -19,7 +19,7 @@
             <source>Accordion options</source>
         </trans-unit>
         <trans-unit id="default_element">
-            <source>Select accordion to be Open by default</source>
+            <source>Select accordion to be open by default</source>
         </trans-unit>
         </body>
     </file>

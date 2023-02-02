@@ -29,7 +29,7 @@
             ] // grid configuration
         )
     )
-    ->setIcon('ku-accordions-icon')
+    ->setIcon('EXT:ku_accordions/Resources/Public/Icons/Extension.svg')
 );
 
 // Configure element type
