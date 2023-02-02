@@ -1,7 +1,5 @@
 <?php
 
-
-
 // KU accordions
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
     (
