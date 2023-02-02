@@ -1,0 +1,22 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:debug>{_all}</f:debug>
+<div class="semi-collapse-item">
+    <div id="accordion-{data.uid}-{record.uid}" class="semi-collapse-accordion-collapse collapse{f:if(condition: '{activeElement} == {record.uid}', then: ' show')} {record.accordion_item_height}" aria-labelledby="accordion-heading-{data.uid}-{record.uid}" data-parent="#accordion-{data.uid}">
+        <div class="semi-collapsible-body">
+            <h3 class="semi-collapsible-header" id="accordion-heading-{data.uid}-{record.uid}">{record.header}</h3>
+            <div class="semi-collapsible-media textpic">
+                <f:if condition="{record.image}">
+                    <f:for each="{record.image}" as="file">
+                        <img src="{f:uri.image(image: file)}" alt="" class="img-fluid">
+                    </f:for>
+                </f:if>
+                <div class="accordion-content-text">
+                    <f:format.html>{record.bodytext}</f:format.html>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="btn semi-collapsible-button{f:if(condition: '{activeElement} == {record.uid}', else:' collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-{data.uid}-{record.uid}" data-bs-parent="#accordion-{data.uid}" aria-expanded="{f:if(condition: '{activeElement} == {record.uid}', then: 'true', else: 'false')}" aria-controls="accordion-{data.uid}-{record.uid}"><span class="visually-hidden">{f:translate(key: 'LLL:EXT:ku_accordions/Resources/Private/Language/locallang.xlf:semi_collapse_accordion_btn')}</span></button>
+</div>
+
+</html>

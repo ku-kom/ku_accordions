@@ -19,7 +19,7 @@
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
     (
         new \B13\Container\Tca\ContainerConfiguration(
-            'ku-accordions', // CType
+            'ku_accordions', // CType
             'LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:label', // label
             'LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:description', // description
             [
@@ -33,8 +33,8 @@
 );
 
 // Configure element type
-$GLOBALS['TCA']['tt_content']['types']['ku-accordions'] = array_replace_recursive(
-    $GLOBALS['TCA']['tt_content']['types']['ku-accordions'],
+$GLOBALS['TCA']['tt_content']['types']['ku_accordions'] = array_replace_recursive(
+    $GLOBALS['TCA']['tt_content']['types']['ku_accordions'],
     [
         'showitem' => '
             --div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general,
@@ -63,5 +63,5 @@ $GLOBALS['TCA']['tt_content']['types']['ku-accordions'] = array_replace_recursiv
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
     '*',
     'FILE:EXT:ku_accordions/Configuration/FlexForms/KuAccordions.xml',
-    'ku-accordions' // CType
+    'ku_accordions' // CType
 );

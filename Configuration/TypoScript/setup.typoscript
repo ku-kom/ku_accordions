@@ -1,5 +1,5 @@
-tt_content.ku-accordions =< lib.contentElement
-tt_content.ku-accordions {
+tt_content.ku_accordions =< lib.contentElement
+tt_content.ku_accordions {
   templateName = AccordeonContainer
 
   templateRootPaths {
@@ -21,14 +21,33 @@ tt_content.ku-accordions {
     203 = B13\Container\DataProcessing\ContainerProcessor
     203 {
       colPos = 203
-      as = accordions
+      as = records
 
       dataProcessing.20 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
       dataProcessing.20 {
         references.table = tt_content
-        references.fieldName = media
-        as = uploads
+        references.fieldName = image
+        as = image
       }
     }
   }
+}
+
+
+##########################
+#### OPTION TO ADD CSS ###
+##########################
+lib.ku_accordions.pagecss = TEXT
+lib.ku_accordions.pagecss {
+    if.isTrue = {$ku_accordions.assets.extraCss}
+    value = {$ku_accordions.assets.extraCss}
+}
+
+##########################
+#### OPTION TO ADD JS ####
+##########################
+lib.ku_accordions.pagejs = TEXT
+lib.ku_accordions.pagejs {
+    if.isTrue = {$ku_accordions.assets.extraJs}
+    value = {$ku_accordions.assets.extraJs}
 }

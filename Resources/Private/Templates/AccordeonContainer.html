@@ -1,10 +1,21 @@
-<f:if condition="{accordions}">
-    <div class="ku-accordions">
-        <f:for each="{accordions}" as="child">
-            {child.data.my_mod_header}
-            <f:for each="{child.uploads}" as="upload">
-                {upload.identifier}
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+<f:section name="Main">
+    <f:if condition="{records}">
+        <f:variable name="activeElement" value="{data.pi_flexform.default_element}" />
+        <div class="semi-collapsible-list" id="accordion-{data.uid}">
+            <f:for each="{records}" as="record">
+                <f:render partial="Accordion" arguments="{_all}" />
             </f:for>
-        </f:for>
-    </div>
-</f:if>
+        </div>
+    </f:if>
+
+    <f:if condition="{lib.ku_accordions.pagecss !== ''}">
+        <f:asset.css identifier="semicollapseCSS" href="{f:cObject(typoscriptObjectPath: 'lib.ku_accordions.pagecss')}" />
+    </f:if>
+    <f:if condition="{lib.ku_accordions.pagejs !== ''}">
+        <f:asset.script identifier="semicollapseJs" src="{f:cObject(typoscriptObjectPath: 'lib.ku_accordions.pagejs')}" />
+    </f:if>
+</f:section>
+
+</html>

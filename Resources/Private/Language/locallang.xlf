@@ -6,8 +6,8 @@
             <authorEmail>nel@adm.ku.dk</authorEmail>
         </header>
         <body>
-        <trans-unit id="">
-            <source></source>
+        <trans-unit id="semi_collapse_accordion_btn">
+            <source>Open or close accordion</source>
         </trans-unit>
         </body>
     </file>
