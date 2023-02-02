@@ -1,7 +1,20 @@
 tt_content.ku-accordions =< lib.contentElement
 tt_content.ku-accordions {
   templateName = AccordeonContainer
-  templateRootPaths.10 = EXT:ku_accordions/Resources/Private/Templates/
+
+  templateRootPaths {
+        10 = EXT:ku_accordions/Resources/Private/Templates/
+        20 = {$ku_accordions.templates.templateRootPath}
+    }
+	partialRootPaths {
+		    10 = EXT:ku_accordions/Resources/Private/Partials/
+        20 = {$ku_accordions.templates.partialRootPath}
+	}
+
+    layoutRootPaths {
+        10 = EXT:ku_accordions/Resources/Private/Layouts/
+        20 = {$ku_accordions.templates.layoutRootPath}
+    }
 
   dataProcessing {
     188 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
