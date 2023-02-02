@@ -21,6 +21,12 @@
         <trans-unit id="default_element">
             <source>Select accordion to be open by default</source>
         </trans-unit>
+        <trans-unit id="none">
+            <source>None</source>
+        </trans-unit>
+        <trans-unit id="advanced">
+            <source>General settings</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
