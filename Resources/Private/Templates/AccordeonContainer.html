@@ -3,18 +3,29 @@
 <f:section name="Main">
     <f:if condition="{records}">
         <f:variable name="activeElement" value="{data.pi_flexform.default_element}" />
-        <div class="semi-collapsible-list" id="accordion-{data.uid}">
-            <f:for each="{records}" as="record">
-                <f:render partial="Accordion" arguments="{_all}" />
-            </f:for>
-        </div>
-    </f:if>
-
-    <f:if condition="{lib.ku_accordions.pagecss !== ''}">
-        <f:asset.css identifier="semicollapseCSS" href="{f:cObject(typoscriptObjectPath: 'lib.ku_accordions.pagecss')}" />
-    </f:if>
-    <f:if condition="{lib.ku_accordions.pagejs !== ''}">
-        <f:asset.script identifier="semicollapseJs" src="{f:cObject(typoscriptObjectPath: 'lib.ku_accordions.pagejs')}" />
+        <f:variable name="accordionStyle" value="{data.pi_flexform.style}" />
+        <f:if condition="{accordionStyle} == 'semi-collapse'">
+            <f:then>
+                <div class="accordion {accordionStyle}" id="accordion-{data.uid}">
+                    <f:for each="{records}" as="record" iteration="iteration">
+                        <f:render partial="SemiCollapseAccordion" arguments="{_all}" />
+                    </f:for>
+                </div>
+            </f:then>
+            <f:else>
+                <div class="accordion" id="accordion-{data.uid}">
+                    <f:for each="{records}" as="record" iteration="iteration">
+                        <f:render partial="Accordion" arguments="{_all}" />
+                    </f:for>
+                </div>
+            </f:else>
+        </f:if>
+        <f:if condition="{lib.ku_accordions.pagecss !== ''}">
+            <f:asset.css identifier="semicollapseCSS" href="{f:cObject(typoscriptObjectPath: 'lib.ku_accordions.pagecss')}" />
+        </f:if>
+        <f:if condition="{lib.ku_accordions.pagejs !== ''}">
+            <f:asset.script identifier="semicollapseJs" src="{f:cObject(typoscriptObjectPath: 'lib.ku_accordions.pagejs')}" />
+        </f:if>
     </f:if>
 </f:section>
 

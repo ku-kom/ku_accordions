@@ -26,6 +26,10 @@
     border: var(--semicollapse-accordion-border)
 }
 
+.semi-collapse-item + .semi-collapse-item {
+    margin-top: var(--bs-gutter-x);
+}
+
 .semi-collapsible-body {
     --bs-accordion-body-padding-x: 1.25rem;
     --bs-accordion-body-padding-y: 1rem;
