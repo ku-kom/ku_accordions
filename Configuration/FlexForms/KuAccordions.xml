@@ -13,33 +13,32 @@
                 <el>
                     <style>
                         <TCEforms>
-                            <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:style
-                            </label>
+                            <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:style</label>
+                            <exclude>true</exclude>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <default></default>
                                 <items type="array">
                                     <numIndex index="0" type="array">
                                         <numIndex index="0">LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:style_accordion</numIndex>
-                                        <numIndex index="1"></numIndex>
+                                        <numIndex index="1">accordion-normal</numIndex>
                                     </numIndex>
                                     <numIndex index="1" type="array">
                                         <numIndex index="0">LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:style_semi_collapse_accordion</numIndex>
                                         <numIndex index="1">semi-collapse</numIndex>
                                     </numIndex>
                                 </items>
+                                <default>accordion-normal</default>
                             </config>
                         </TCEforms>
                     </style>
                     <default_element>
                         <TCEforms>
-                            <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:default_element
-                            </label>
+                            <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:default_element</label>
+                            <exclude>true</exclude>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
-                                <default></default>
                                 <foreign_table>tt_content</foreign_table>
                                 <foreign_table_where>AND tx_container_parent = ###THIS_UID###</foreign_table_where>
                                 <items type="array">
@@ -48,9 +47,31 @@
                                         <numIndex index="1">0</numIndex>
                                     </numIndex>
                                 </items>
+                                <default></default>
                             </config>
                         </TCEforms>
                     </default_element>
+                    <open_style>
+                        <TCEforms>
+                            <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:one_or_multiple_open</label>
+                            <exclude>true</exclude>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:one_open</numIndex>
+                                        <numIndex index="1">single</numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:multiple_open</numIndex>
+                                        <numIndex index="1">multiple</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default>single</default>
+                            </config>
+                        </TCEforms>
+                    </open_style>
                 </el>
             </ROOT>
         </sDEF>

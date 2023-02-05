@@ -36,6 +36,15 @@
         <trans-unit id="style_semi_collapse_accordion">
             <source>Semi collapse accordion</source>
         </trans-unit>
+        <trans-unit id="one_or_multiple_open">
+            <source>One or more accordions open at a time</source>
+        </trans-unit>
+        <trans-unit id="multiple_open">
+            <source>Keep multiple accordions open at a time</source>
+        </trans-unit>
+        <trans-unit id="one_open">
+            <source>Keep only one accordion open at a time</source>
+        </trans-unit>
         </body>
     </file>
 </xliff>
