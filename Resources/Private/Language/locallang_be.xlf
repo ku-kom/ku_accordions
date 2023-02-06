@@ -22,7 +22,7 @@
             <source>Select accordion to be open by default</source>
         </trans-unit>
         <trans-unit id="none">
-            <source>None</source>
+            <source>-- None --</source>
         </trans-unit>
         <trans-unit id="advanced">
             <source>General settings</source>
@@ -37,13 +37,13 @@
             <source>Semi collapse accordion</source>
         </trans-unit>
         <trans-unit id="one_or_multiple_open">
-            <source>One or more accordions open at a time</source>
+            <source>Allow one or more accordions open at a time</source>
         </trans-unit>
         <trans-unit id="multiple_open">
-            <source>Keep multiple accordions open at a time</source>
+            <source>Allow multiple accordions to be open at a time</source>
         </trans-unit>
         <trans-unit id="one_open">
-            <source>Keep only one accordion open at a time</source>
+            <source>Allow only one accordion to be open at a time</source>
         </trans-unit>
         </body>
     </file>

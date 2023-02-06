@@ -1,9 +1,9 @@
 TCEFORM {
     tt_content {
-        # cType ku-accordions:
+        # cType ku_accordions:
         header_layout {
            types {
-                ku-accordions {
+                ku_accordions {
                     disabled = 1
                 }
             }
@@ -11,7 +11,7 @@ TCEFORM {
 
         header_link {
            types {
-                ku-accordions {
+                ku_accordions {
                     disabled = 1
                 }
             }
@@ -19,7 +19,7 @@ TCEFORM {
 
         subheader {
            types {
-                ku-accordions {
+                ku_accordions {
                     disabled = 1
                 }
             }
@@ -27,7 +27,7 @@ TCEFORM {
 
         header_position {
            types {
-                ku-accordions {
+                ku_accordions {
                     disabled = 1
                 }
             }
@@ -35,7 +35,7 @@ TCEFORM {
 
         date {
            types {
-                ku-accordions {
+                ku_accordions {
                     disabled = 1
                 }
             }
