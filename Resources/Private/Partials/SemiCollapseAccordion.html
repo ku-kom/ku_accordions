@@ -3,7 +3,7 @@
 <div class="semi-collapse-item">
     <div id="accordion-{data.uid}-{record.uid}" class="semi-collapse-accordion-collapse collapse{f:if(condition: '{activeElement} == {record.uid}', then: ' show')} {record.accordion_item_height}" aria-labelledby="accordion-heading-{data.uid}-{record.uid}" data-parent="#accordion-{data.uid}" {f:if(condition: '{accordionOpenStyle} == "single"' , then: ' data-bs-parent="#accordion-{data.uid}"' )}>
         <div class="semi-collapsible-body">
-            <h3 class="semi-collapsible-header" id="accordion-heading-{data.uid}-{record.uid}">{record.header}</h3>
+            <h2 class="semi-collapsible-header" id="accordion-heading-{data.uid}-{record.uid}">{record.header}</h2>
             <div class="semi-collapsible-media">
                 <f:if condition="{record.image}">
                     <f:for each="{record.image}" as="file">

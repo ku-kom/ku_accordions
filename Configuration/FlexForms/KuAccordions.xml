@@ -32,25 +32,6 @@
                             </config>
                         </TCEforms>
                     </style>
-                    <default_element>
-                        <TCEforms>
-                            <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:default_element</label>
-                            <exclude>true</exclude>
-                            <config>
-                                <type>select</type>
-                                <renderType>selectSingle</renderType>
-                                <foreign_table>tt_content</foreign_table>
-                                <foreign_table_where>AND tx_container_parent = ###THIS_UID###</foreign_table_where>
-                                <items type="array">
-                                    <numIndex index="0" type="array">
-                                        <numIndex index="0">LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:none</numIndex>
-                                        <numIndex index="1">0</numIndex>
-                                    </numIndex>
-                                </items>
-                                <default></default>
-                            </config>
-                        </TCEforms>
-                    </default_element>
                     <open_style>
                         <TCEforms>
                             <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:one_or_multiple_open</label>
@@ -72,6 +53,25 @@
                             </config>
                         </TCEforms>
                     </open_style>
+                    <default_element>
+                        <TCEforms>
+                            <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:default_element</label>
+                            <exclude>true</exclude>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <foreign_table>tt_content</foreign_table>
+                                <foreign_table_where>AND tx_container_parent = ###THIS_UID###</foreign_table_where>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:none</numIndex>
+                                        <numIndex index="1">0</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default></default>
+                            </config>
+                        </TCEforms>
+                    </default_element>
                 </el>
             </ROOT>
         </sDEF>

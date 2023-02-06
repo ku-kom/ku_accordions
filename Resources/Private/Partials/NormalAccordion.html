@@ -1,9 +1,9 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 
 <div class="accordion-item">
-    <h4 class="accordion-header" id="accordion-heading-{data.uid}-{record.uid}">
+    <h2 class="accordion-header" id="accordion-heading-{data.uid}-{record.uid}">
         <button class="accordion-button{f:if(condition: '{activeElement} == {record.uid}', else:' collapsed')}" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-{data.uid}-{record.uid}" aria-expanded="{f:if(condition: '{activeElement} == {record.uid}', then: 'true', else: 'false')}" aria-controls="accordion-{data.uid}-{record.uid}">{record.header}</button>
-    </h4>
+    </h2>
     <div id="accordion-{data.uid}-{record.uid}" class="accordion-collapse collapse{f:if(condition: '{activeElement} == {record.uid}', then: ' show')}" aria-labelledby="accordion-heading-{data.uid}-{record.uid}" {f:if(condition: '{accordionOpenStyle} == "single"' , then: ' data-bs-parent="#accordion-{data.uid}"' )}>
         <div class="accordion-body">
             <div class="accordion-content accordion-content-{record.mediaorient}">
