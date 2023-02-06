@@ -15,6 +15,7 @@
                         <TCEforms>
                             <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:style</label>
                             <exclude>true</exclude>
+                            <onChange>reload</onChange>
                             <config>
                                 <type>select</type>
                                 <renderType>selectSingle</renderType>
@@ -72,6 +73,37 @@
                             </config>
                         </TCEforms>
                     </default_element>
+                    <accordion_item_height>
+                        <TCEforms>
+                            <label>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:accordion_item_height</label>
+                            <description>LLL:EXT:ku_accordions/Resources/Private/Language/locallang_be.xlf:accordion_item_height_desc</description>
+                            <exclude>true</exclude>
+                            <config>
+                                <type>select</type>
+                                <renderType>selectSingle</renderType>
+                                <items type="array">
+                                    <numIndex index="0" type="array">
+                                        <numIndex index="0">Default</numIndex>
+                                        <numIndex index="1"></numIndex>
+                                    </numIndex>
+                                    <numIndex index="1" type="array">
+                                        <numIndex index="0">Height: 200px</numIndex>
+                                        <numIndex index="1">height-200</numIndex>
+                                    </numIndex>
+                                    <numIndex index="2" type="array">
+                                        <numIndex index="0">Height: 300px</numIndex>
+                                        <numIndex index="1">height-300</numIndex>
+                                    </numIndex>
+                                    <numIndex index="3" type="array">
+                                        <numIndex index="0">Height: 400px</numIndex>
+                                        <numIndex index="1">height-400</numIndex>
+                                    </numIndex>
+                                </items>
+                                <default></default>
+                            </config>
+                            <displayCond>FIELD:style:=:semi-collapse</displayCond>
+                        </TCEforms>
+                    </accordion_item_height>
                 </el>
             </ROOT>
         </sDEF>

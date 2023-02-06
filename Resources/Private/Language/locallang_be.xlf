@@ -37,13 +37,19 @@
             <source>Semi collapse accordion</source>
         </trans-unit>
         <trans-unit id="one_or_multiple_open">
-            <source>Allow one or more accordions open at a time</source>
+            <source>Allow either one or more accordions open at a time</source>
         </trans-unit>
         <trans-unit id="multiple_open">
             <source>Allow multiple accordions to be open at a time</source>
         </trans-unit>
         <trans-unit id="one_open">
             <source>Allow only one accordion to be open at a time</source>
+        </trans-unit>
+        <trans-unit id="accordion_item_height">
+            <source>Semi collapse height in px</source>
+        </trans-unit>
+        <trans-unit id="accordion_item_height_desc">
+            <source>Only change if strictly necessary</source>
         </trans-unit>
         </body>
     </file>
