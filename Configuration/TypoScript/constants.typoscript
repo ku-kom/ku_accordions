@@ -4,7 +4,7 @@ ku_accordions {
         templateRootPath = EXT:ku_accordions/Resources/Private/Templates/
         # cat=KU accordions/file; type=string; label=Partial Root Path: Path to partials (with a trailing slash).
         partialRootPath = EXT:ku_accordions/Resources/Private/Partials/
-        # cat=KU accordionsK/file; type=string; label=Layout Root Path: Path to layout (with a trailing slash).
+        # cat=KU accordions/file; type=string; label=Layout Root Path: Path to layout (with a trailing slash).
         layoutRootPath = EXT:ku_accordions/Resources/Private/Layouts/
     }
     assets {
