@@ -17,7 +17,7 @@ tt_content.ku_accordions {
     }
 
   dataProcessing {
-    10 = UniversityOfCopenhagen\KuAccordions\DataProcessing\FlexFormProcessor
+    10 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
     203 = B13\Container\DataProcessing\ContainerProcessor
     203 {
       colPos = 203
