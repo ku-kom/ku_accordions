@@ -8,14 +8,14 @@
  * LICENSE file that was distributed with this source code.
  */
 
- defined('TYPO3') or die('Access denied.');
+defined('TYPO3') or die('Access denied.');
 
 $extension = 'ku_accordions';
 
- // Add Content Element
- if (!is_array($GLOBALS['TCA']['tt_content']['types'][$extension] ?? false)) {
-     $GLOBALS['TCA']['tt_content']['types'][$extension] = [];
- }
+// Add Content Element
+if (!is_array($GLOBALS['TCA']['tt_content']['types'][$extension] ?? false)) {
+    $GLOBALS['TCA']['tt_content']['types'][$extension] = [];
+}
 
 // KU accordions container
 \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureContainer(
