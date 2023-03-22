@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
     /**
      * Return if Bootstrap collapse is not present
      */
-    if (typeof bootstrap.Collapse !== "function") {
+    if (typeof bootstrap.Collapse !== 'function') {
         return;
     }
 
@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 const bsCollapse = new bootstrap.Collapse(accordionID, {
                     show: true
                 });
-                // SAcroll to accordion
+                // Scroll to accordion
                 document.querySelector(accordionID).scrollIntoView({
                     behavior: 'smooth'
                 });
