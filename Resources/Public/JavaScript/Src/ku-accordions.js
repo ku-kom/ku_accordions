@@ -28,11 +28,10 @@ window.addEventListener('DOMContentLoaded', () => {
             // Open accordions based on the hash in the url
             let accordionExists = window.location.hash.indexOf('accordion-') >= 0;
             if (accordionExists) {
-                let accordionID = window.location.hash;
+                const accordionID = window.location.hash; // Variable includes hash (#).
                 // Open accordion
-                const bsCollapse = new bootstrap.Collapse(accordionID, {
-                    show: true
-                });
+                const collapsibleElement = document.querySelector(accordionID);
+                new bootstrap.Collapse(collapsibleElement).show();
                 // Scroll to accordion
                 document.querySelector(accordionID).scrollIntoView({
                     behavior: 'smooth'
