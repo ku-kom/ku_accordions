@@ -40,5 +40,5 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    slideToOpenAccordion();
+    //slideToOpenAccordion();
 });
