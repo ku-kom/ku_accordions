@@ -41,6 +41,7 @@ lib.ku_accordions.pagecss = TEXT
 lib.ku_accordions.pagecss {
     if.isTrue = {$ku_accordions.assets.extraCss}
     value = {$ku_accordions.assets.extraCss}
+    htmlSanitize = 1
 }
 
 ##########################
@@ -50,4 +51,5 @@ lib.ku_accordions.pagejs = TEXT
 lib.ku_accordions.pagejs {
     if.isTrue = {$ku_accordions.assets.extraJs}
     value = {$ku_accordions.assets.extraJs}
+    htmlSanitize = 1
 }
